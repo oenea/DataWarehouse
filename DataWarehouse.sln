@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35425.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "DataWarehouse", "DataWarehouse.dwproj", "{A2EC43B7-37C6-4F85-9157-5CECC3620242}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2EC43B7-37C6-4F85-9157-5CECC3620242}.Development|Default.ActiveCfg = Development
+		{A2EC43B7-37C6-4F85-9157-5CECC3620242}.Development|Default.Build.0 = Development
+		{A2EC43B7-37C6-4F85-9157-5CECC3620242}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1E76953-0CF0-4DAA-BEE3-F68054EC3686}
+	EndGlobalSection
+EndGlobal
