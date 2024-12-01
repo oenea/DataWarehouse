@@ -1,270 +1,65 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ea8cea28-29e4-4d6c-8daf-ddf6b1c9dabe" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b98453c7-126c-41b1-86b1-afb4660d7006" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Data Warehouse</ID>
   <MeasureGroups>
     <MeasureGroup>
-      <ID>Return Processing</ID>
-      <Partitions>
-        <Partition dwd:design-time-name="b2e07a62-f509-449a-844e-5a434e687104">
-          <ID>Return Processing</ID>
-          <Name>Return Processing</Name>
-          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ca9c511a-0f1c-4400-aa2f-d82d898a21c9">
-            <DataSourceViewID>Data Warehouse</DataSourceViewID>
-            <TableID>dbo_ReturnProcessing</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-          <EstimatedRows>2</EstimatedRows>
-        </Partition>
-      </Partitions>
-    </MeasureGroup>
-    <MeasureGroup>
       <ID>Product Sales</ID>
       <Partitions>
-        <Partition dwd:design-time-name="a8156f84-1abb-4cea-a35c-dae229db88b1">
+        <Partition dwd:design-time-name="27e4a5c5-73e3-4955-bf69-3f5005f87329">
           <ID>Product Sales</ID>
           <Name>Product Sales</Name>
-          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ca902ad9-e496-4d37-ab81-7969ac98d947">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="192a1733-dd4a-4e26-aa01-7f86144c96a4">
             <DataSourceViewID>Data Warehouse</DataSourceViewID>
             <TableID>dbo_ProductSales</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <EstimatedRows>2</EstimatedRows>
-          <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
       </Partitions>
-      <AggregationDesigns>
-        <AggregationDesign>
-          <ID>AggregationDesign</ID>
-          <Name>AggregationDesign</Name>
-          <CreatedTimestamp>2024-11-24T04:38:31.55Z</CreatedTimestamp>
-          <LastSchemaUpdate>2024-11-24T04:38:31.55Z</LastSchemaUpdate>
-          <EstimatedRows>2</EstimatedRows>
-          <Dimensions>
-            <Dimension>
-              <CubeDimensionID>Products</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Products Id</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Catalogue Id</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Serial Number</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension>
-              <CubeDimensionID>Date</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Date Id</AttributeID>
-                  <EstimatedCount>3</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Date</AttributeID>
-                  <EstimatedCount>3</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Year</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Month</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Day</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Day Of Week</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-          </Dimensions>
-        </AggregationDesign>
-      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Return Processing</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="646d9c3d-0ee3-49c4-b798-13d1bad0bb6d">
+          <ID>Return Processing</ID>
+          <Name>Return Processing</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8cf14b8c-23ab-430e-ae1b-bb9d70cbb54d">
+            <DataSourceViewID>Data Warehouse</DataSourceViewID>
+            <TableID>dbo_ReturnProcessing</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
     </MeasureGroup>
     <MeasureGroup>
       <ID>Returns</ID>
       <Partitions>
-        <Partition dwd:design-time-name="88af8cfb-b5f8-4f48-88ce-660c448e0e35">
+        <Partition dwd:design-time-name="8796c998-6da2-4390-a4ab-35da261f8895">
           <ID>Returns</ID>
           <Name>Returns</Name>
-          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a671e099-d405-4dcd-99c0-2f95707af5c0">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a856174d-3976-4dc7-a056-9fa66bd0f6ca">
             <DataSourceViewID>Data Warehouse</DataSourceViewID>
             <TableID>dbo_Returns_</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <EstimatedRows>2</EstimatedRows>
-          <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
       </Partitions>
-      <AggregationDesigns>
-        <AggregationDesign>
-          <ID>AggregationDesign</ID>
-          <Name>AggregationDesign</Name>
-          <CreatedTimestamp>2024-11-24T04:38:04.776667Z</CreatedTimestamp>
-          <LastSchemaUpdate>2024-11-24T04:38:04.776667Z</LastSchemaUpdate>
-          <EstimatedRows>2</EstimatedRows>
-          <Dimensions>
-            <Dimension>
-              <CubeDimensionID>Returns</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Returns Id</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Processing Started Id</AttributeID>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Processing Finished Id</AttributeID>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Junk Id</AttributeID>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Products Id</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension>
-              <CubeDimensionID>Processing Started</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Date Id</AttributeID>
-                  <EstimatedCount>3</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Date</AttributeID>
-                  <EstimatedCount>3</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Year</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Month</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Day</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Day Of Week</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension>
-              <CubeDimensionID>Processing Finished</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Date Id</AttributeID>
-                  <EstimatedCount>3</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Date</AttributeID>
-                  <EstimatedCount>3</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Year</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Month</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Day</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Day Of Week</AttributeID>
-                  <EstimatedCount>1</EstimatedCount>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension>
-              <CubeDimensionID>Junk</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Junk Id</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Status</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Was Returned On Warranty</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension>
-              <CubeDimensionID>Products</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Products Id</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Product Catalogue Id</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Serial Number</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension>
-              <CubeDimensionID>Employee</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Employee Id</AttributeID>
-                  <EstimatedCount>2</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Name</AttributeID>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Career Stage</AttributeID>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Age</AttributeID>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-          </Dimensions>
-        </AggregationDesign>
-      </AggregationDesigns>
     </MeasureGroup>
   </MeasureGroups>
 </Cube>
