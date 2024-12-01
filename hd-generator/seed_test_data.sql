@@ -29,6 +29,8 @@ INSERT INTO Products (products_id, productCatalogue_id, serial_number) VALUES
 INSERT INTO Returns_ (returns_id, company_cost, processing_time_days, days_since_purchase, products_id, junk_id, processing_started_id, processing_finished_id) VALUES
 	('807c496e-d770-4bfa-8083-81689b90fdad', 100, 100, 123, 'a2ad117b-37c5-4c8d-8d95-4df2b820f90d', '45a7ae0b-a971-4d5a-95c8-26f5da135c8b', '08d36237-205f-441f-ae5f-c6a91e4f32e6', '08d36237-205f-441f-ae5f-c6a91e4f32e6'),
 	('6e93ebab-6e89-45f3-a9b3-fcac6d48299d', 200, 200, 123, 'a2ad117b-37c5-4c8d-8d95-4df2b820f90d', '89c9a684-ef3a-4116-bde9-caed1dddbf3f', '08d36237-205f-441f-ae5f-c6a91e4f32e6', '08d36237-205f-441f-ae5f-c6a91e4f32e6')
+	--('807c496e-d770-4bfa-8083-81689b90fdad', 100, 100, 123, 'a2ad117b-37c5-4c8d-8d95-4df2b820f90d', '45a7ae0b-a971-4d5a-95c8-26f5da135c8b', '2024-12-01 12:00:00', '2024-12-01 12:00:00'),
+    --('6e93ebab-6e89-45f3-a9b3-fcac6d48299d', 200, 200, 123, 'a2ad117b-37c5-4c8d-8d95-4df2b820f90d', '89c9a684-ef3a-4116-bde9-caed1dddbf3f', '2024-12-02 15:00:00', '2024-12-02 15:00:00')
 
 INSERT INTO ProductSales (products_id, price, discount_applied, date_id) VALUES
     ('a2ad117b-37c5-4c8d-8d95-4df2b820f90d', 123, 10, '08d36237-205f-441f-ae5f-c6a91e4f30e6'),

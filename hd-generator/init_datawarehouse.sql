@@ -70,12 +70,12 @@ CREATE TABLE Returns_
 	days_since_purchase integer NOT NULL,
 	products_id UNIQUEIDENTIFIER,
 	junk_id UNIQUEIDENTIFIER,
-	processing_started_id DATETIME,
-	processing_finished_id DATETIME,
+	processing_started_id UNIQUEIDENTIFIER,
+	processing_finished_id UNIQUEIDENTIFIER,
     FOREIGN KEY (products_id) REFERENCES Products (products_id),
     FOREIGN KEY (junk_id) REFERENCES Junk (junk_id),
-    FOREIGN KEY (processing_started_id) REFERENCES Date_ (date_),
-    FOREIGN KEY (processing_finished_id) REFERENCES Date_ (date_)
+    FOREIGN KEY (processing_started_id) REFERENCES Date_ (date_id),
+    FOREIGN KEY (processing_finished_id) REFERENCES Date_ (date_id)
 );
 
 
