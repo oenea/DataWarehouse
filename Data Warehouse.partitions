@@ -1,19 +1,19 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="384c4561-eafe-4fed-895a-f8548fbc6ecf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="89d5f9b9-7f43-40ff-b93c-b20c76db2529" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Data Warehouse</ID>
   <MeasureGroups>
     <MeasureGroup>
-      <ID>Returns</ID>
+      <ID>Product Sales</ID>
       <Partitions>
-        <Partition dwd:design-time-name="924466d4-7569-49e6-8665-fb166df7d961">
-          <ID>Returns</ID>
-          <Name>Returns</Name>
+        <Partition dwd:design-time-name="6eb392f1-afbf-43df-8f39-483300910051">
+          <ID>Product Sales</ID>
+          <Name>Product Sales</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6188866a-b831-4985-9046-262b63e8fffb">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f8c40a93-94d8-49fd-bd64-be4df7a5c52c">
             <DataSourceViewID>Data Warehouse</DataSourceViewID>
-            <TableID>dbo_Returns_</TableID>
+            <TableID>dbo_ProductSales</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -24,14 +24,14 @@
     <MeasureGroup>
       <ID>Return Processing</ID>
       <Partitions>
-        <Partition dwd:design-time-name="9e80cd05-cf57-4c2e-93c3-9834883273c6">
+        <Partition dwd:design-time-name="47719ae2-671c-4905-9ca6-f3163ad95fd8">
           <ID>Return Processing</ID>
           <Name>Return Processing</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="57dfd8d6-93e4-437a-9156-61c6190c022d">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d784748d-027c-46a9-bdde-df82a0adf2e2">
             <DataSourceViewID>Data Warehouse</DataSourceViewID>
             <TableID>dbo_ReturnProcessing</TableID>
           </Source>
@@ -42,18 +42,18 @@
       </Partitions>
     </MeasureGroup>
     <MeasureGroup>
-      <ID>Product Sales</ID>
+      <ID>Returns</ID>
       <Partitions>
-        <Partition dwd:design-time-name="42f43ecb-de0b-4a15-a9c3-d5eac6ef9e14">
-          <ID>Product Sales</ID>
-          <Name>Product Sales</Name>
+        <Partition dwd:design-time-name="378c21fd-f8f2-44e7-bb23-703e9443ff19">
+          <ID>Returns</ID>
+          <Name>Returns</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7e5ff4de-750e-4d4f-898b-edef90dceb6b">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dc6bd139-fa35-4340-93f3-d802125c7cac">
             <DataSourceViewID>Data Warehouse</DataSourceViewID>
-            <TableID>dbo_ProductSales</TableID>
+            <TableID>dbo_Returns_</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
