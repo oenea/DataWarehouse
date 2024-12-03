@@ -29,8 +29,7 @@ CREATE TABLE Employee
 
 CREATE TABLE Date_
 (
-    date_id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
-    date_ DATETIME UNIQUE NOT NULL,
+    date_ DATETIME PRIMARY KEY NOT NULL,
     year_ varchar(255) NOT NULL,
     month_ varchar(255) NOT NULL, --CHECK (month_ IN (N'January', N'February', N'March', N'April', N'May', N'June', N'July', N'August', N'September', N'October', N'November', N'December')),
     monthNumber integer NOT NULL,
@@ -44,13 +43,12 @@ CREATE TABLE ProductCatalogue
     productCatalogue_id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
     name_ varchar(255) NOT NULL,
     material_id UNIQUEIDENTIFIER,
-    catalogue_price decimal NOT NULL,
+    product_line varchar(255) NOT NULL,
     category varchar(255) NOT NULL,
-	introduction_date UNIQUEIDENTIFIER,
-	insertion_date UNIQUEIDENTIFIER,
-	deactivation_date UNIQUEIDENTIFIER,
+	introduction_date DATETIME,
+	is_current varchar(255),
 	FOREIGN KEY (material_id) REFERENCES Material (material_id),
-    FOREIGN KEY (introduction_date) REFERENCES Date_ (date_id),
+    FOREIGN KEY (introduction_date) REFERENCES Date_ (date_),
 );
 
 CREATE TABLE Products
@@ -70,12 +68,12 @@ CREATE TABLE Returns_
 	days_since_purchase integer NOT NULL,
 	products_id UNIQUEIDENTIFIER,
 	junk_id UNIQUEIDENTIFIER,
-	processing_started_id UNIQUEIDENTIFIER,
-	processing_finished_id UNIQUEIDENTIFIER,
+	processing_started_id DATETIME,
+	processing_finished_id DATETIME,
     FOREIGN KEY (products_id) REFERENCES Products (products_id),
     FOREIGN KEY (junk_id) REFERENCES Junk (junk_id),
-    FOREIGN KEY (processing_started_id) REFERENCES Date_ (date_id),
-    FOREIGN KEY (processing_finished_id) REFERENCES Date_ (date_id)
+    FOREIGN KEY (processing_started_id) REFERENCES Date_ (date_),
+    FOREIGN KEY (processing_finished_id) REFERENCES Date_ (date_)
 );
 
 
@@ -85,8 +83,8 @@ CREATE TABLE ProductSales
 	products_id UNIQUEIDENTIFIER,
     price decimal NOT NULL,
     discount_applied integer NOT NULL,
-	date_id UNIQUEIDENTIFIER,
-    FOREIGN KEY (date_id) REFERENCES Date_ (date_id),
+	date_ DATETIME,
+    FOREIGN KEY (date_) REFERENCES Date_ (date_),
 	FOREIGN KEY (products_id) REFERENCES Products (products_id)
 );
 
