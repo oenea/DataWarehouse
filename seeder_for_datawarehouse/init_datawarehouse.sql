@@ -63,7 +63,7 @@ CREATE TABLE Products
 CREATE TABLE Returns_
 (
     returns_id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
-    company_cost decimal NOT NULL,
+    company_cost decimal(18, 2) NOT NULL,
     processing_time_days integer NOT NULL,
 	days_since_purchase integer NOT NULL,
 	products_id UNIQUEIDENTIFIER,
