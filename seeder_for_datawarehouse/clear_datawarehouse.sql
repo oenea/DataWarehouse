@@ -1,10 +1,13 @@
 USE master
 GO
 
-DELETE FROM CompanyDatabase.dbo.Employee;
-DELETE FROM CompanyDatabase.dbo.Complaint;
-DELETE FROM CompanyDatabase.dbo.ReturnProcessing;
-DELETE FROM CompanyDatabase.dbo.ReturnsTable;
-DELETE FROM CompanyDatabase.dbo.Products;
-DELETE FROM CompanyDatabase.dbo.ProductCatalogue;
-DELETE FROM CompanyDatabase.dbo.Material;
+DELETE FROM DataWarehouse.dbo.Employee;
+DELETE FROM DataWarehouse.dbo.Date_;
+DELETE FROM DataWarehouse.dbo.Products;
+DELETE FROM DataWarehouse.dbo.ProductSales;
+DELETE FROM DataWarehouse.dbo.ReturnProcessing;
+DELETE FROM DataWarehouse.dbo.Returns_;
+DELETE FROM DataWarehouse.dbo.ProductCatalogue;
+DELETE FROM DataWarehouse.dbo.Material;
+DELETE FROM DataWarehouse.dbo.Junk;
+
