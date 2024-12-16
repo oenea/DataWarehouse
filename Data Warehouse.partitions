@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="89d5f9b9-7f43-40ff-b93c-b20c76db2529" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c6e7f1e2-0b2f-47e7-b520-23816bc27fdc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Data Warehouse</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Product Sales</ID>
       <Partitions>
-        <Partition dwd:design-time-name="6eb392f1-afbf-43df-8f39-483300910051">
+        <Partition dwd:design-time-name="301061fd-876a-4b66-8c1f-fc8dad86f48c">
           <ID>Product Sales</ID>
           <Name>Product Sales</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f8c40a93-94d8-49fd-bd64-be4df7a5c52c">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c5ff9de2-f70e-4861-b814-023c02e3a78a">
             <DataSourceViewID>Data Warehouse</DataSourceViewID>
             <TableID>dbo_ProductSales</TableID>
           </Source>
@@ -24,14 +24,14 @@
     <MeasureGroup>
       <ID>Return Processing</ID>
       <Partitions>
-        <Partition dwd:design-time-name="47719ae2-671c-4905-9ca6-f3163ad95fd8">
+        <Partition dwd:design-time-name="fdf5bc31-c721-4513-9746-22c0b397e493">
           <ID>Return Processing</ID>
           <Name>Return Processing</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d784748d-027c-46a9-bdde-df82a0adf2e2">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="84698fc4-0696-477c-abda-5f55e5e2e1ff">
             <DataSourceViewID>Data Warehouse</DataSourceViewID>
             <TableID>dbo_ReturnProcessing</TableID>
           </Source>
@@ -44,22 +44,433 @@
     <MeasureGroup>
       <ID>Returns</ID>
       <Partitions>
-        <Partition dwd:design-time-name="378c21fd-f8f2-44e7-bb23-703e9443ff19">
+        <Partition dwd:design-time-name="248860ce-6029-4ae8-be20-7e4bb2cfd331">
           <ID>Returns</ID>
           <Name>Returns</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dc6bd139-fa35-4340-93f3-d802125c7cac">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e97bc79a-61ef-4a55-addb-510b851cdb80">
             <DataSourceViewID>Data Warehouse</DataSourceViewID>
             <TableID>dbo_Returns_</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>4000</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
       </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2024-12-16T01:43:28.19Z</CreatedTimestamp>
+          <LastSchemaUpdate>2024-12-16T01:43:28.19Z</LastSchemaUpdate>
+          <EstimatedRows>4000</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Returns</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Returns Id</AttributeID>
+                  <EstimatedCount>4000</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Processing Finished Id</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Products Id</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Junk Id</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Processing Started Id</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Processing Finished</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date</AttributeID>
+                  <EstimatedCount>24107</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year</AttributeID>
+                  <EstimatedCount>66</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Number</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Week Number</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Week</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Products</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Products Id</AttributeID>
+                  <EstimatedCount>100</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Product Catalogue Id</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Serial Number</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Junk</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Junk Id</AttributeID>
+                  <EstimatedCount>32</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Processing Started</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date</AttributeID>
+                  <EstimatedCount>24107</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year</AttributeID>
+                  <EstimatedCount>66</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Number</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Week Number</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Week</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Employee</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Employee Id</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Product Catalogue</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Product Catalogue Id</AttributeID>
+                  <EstimatedCount>4000</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Product Line</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Category</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Is Current</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Material Id</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Introduction Date</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Material</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Material Id</AttributeID>
+                  <EstimatedCount>36</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Material Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Material Type</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Returns</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Finished</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Products</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Started</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Employee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Product Catalogue</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Material</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Returns</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Finished</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Products</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Started</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Employee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Product Catalogue</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Material</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Returns</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Finished</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Products</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Products Id</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Started</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Employee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Product Catalogue</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Material</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Returns</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Finished</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Products</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Junk Id</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Started</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Employee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Product Catalogue</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Material</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Returns</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Finished</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Products</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Started</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Employee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Product Catalogue</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Material</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Returns</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Finished</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Products</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Started</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Employee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Product Catalogue</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Material</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Material Id</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Returns</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Finished</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Products</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Junk Id</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Processing Started</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Employee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Product Catalogue</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Material</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Material Id</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
     </MeasureGroup>
   </MeasureGroups>
 </Cube>

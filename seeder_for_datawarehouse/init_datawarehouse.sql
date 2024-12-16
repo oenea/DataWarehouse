@@ -55,7 +55,7 @@ CREATE TABLE Products
 (
     products_id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
 	productCatalogue_id UNIQUEIDENTIFIER,
-	serial_number int NOT NULL
+	serial_number UNIQUEIDENTIFIER,
     FOREIGN KEY (productCatalogue_id) REFERENCES ProductCatalogue (productCatalogue_id),
 );
 

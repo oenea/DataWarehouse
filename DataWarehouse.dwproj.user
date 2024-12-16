@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>.\LAB2</TargetServer>
+        <TargetServer>DESKTOP-02EFERQ</TargetServer>
         <TargetDatabase>DataWarehouse</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
